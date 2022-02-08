@@ -1,0 +1,11 @@
+.classes_page {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.background_classes {
+  background-color: #ffa600;
+  font-size: 50px;
+}

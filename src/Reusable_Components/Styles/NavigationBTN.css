@@ -1,0 +1,19 @@
+.holder {
+  margin: 15px;
+}
+
+.holder_section {
+  width: 70px;
+  padding: 6px;
+  border: 1px solid black;
+  border-radius: 9px;
+  display: flex;
+  justify-content: space-evenly;
+  transition-duration: 0.3s;
+}
+
+.holder_section:hover {
+  cursor: pointer;
+  padding: 8px;
+  background-color: rgba(88, 88, 88, 0.212);
+}
