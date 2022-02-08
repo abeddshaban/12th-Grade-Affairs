@@ -3,9 +3,9 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LS from "./Calculator/LS";
 import Classes from "./Pages/Classes";
-import Grade_12 from "./Pages/Grade_12";
-import TwelveLS from "./Pages/12ls/12LSmaterial";
-import TwelveLS_English from "./Pages/12ls/English";
+import Grade12 from "./Pages/Grade_12";
+import TwelveLs from "./Pages/12ls/12LSmaterial";
+import TwelveLsEnglish from "./Pages/12ls/English";
 import NavBar from "./Reusable_Components/NavBar";
 
 function App() {
@@ -26,13 +26,13 @@ function App() {
           <Route exact path="/classes" element={<Classes />} />
         </Routes>
         <Routes>
-          <Route exact path="/12" element={<Grade_12 />} />
+          <Route exact path="/12" element={<Grade12 />} />
         </Routes>
         <Routes>
-          <Route exact path="/12-ls/subjects" element={<TwelveLS />} />
+          <Route exact path="/12-ls/subjects" element={<TwelveLs />} />
         </Routes>
         <Routes>
-          <Route exact path="/12-ls/English" element={<TwelveLS_English />} />
+          <Route exact path="/12-ls/English" element={<TwelveLsEnglish />} />
         </Routes>
       </BrowserRouter>
     </>
