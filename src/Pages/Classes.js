@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar";
 import "./Pages_styles/Classes.css";
-import Grade_Section from "../Reusable_Components/NavigationBTN";
+import NavigationBTN from "../Reusable_Components/NavigationBTN";
 
 const Classes = () => {
   return (
@@ -10,7 +10,7 @@ const Classes = () => {
         <Navbar title="Check your Class" />
       </div>
       <div className="classes_page">
-        <Grade_Section path="12" section="Grade 12" />
+        <NavigationBTN path="/12" text="Grade 12" />
       </div>
     </>
   );

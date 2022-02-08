@@ -11,14 +11,14 @@ import NavBar from "./Reusable_Components/NavBar";
 function App() {
   return (
     <>
-      <div className="menu">
-        <NavBar />
-      </div>
       <br />
       <br />
       <br />
 
       <BrowserRouter>
+        <div className="menu">
+          <NavBar />
+        </div>
         <Routes>
           <Route exact path="/" element={<LS />} />
         </Routes>

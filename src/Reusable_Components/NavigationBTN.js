@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Styles/NavigationBTN.css";
 
-const Grade_Section = ({ section, path }) => {
+const NavigationBTN = ({ text, path }) => {
   return (
     <div className="holder">
-      <Link to={"/" + path}>
-        <section className="holder_section">{section}</section>
+      <Link to={path} className="link">
+        <section className="holder_section">{text}</section>
       </Link>
     </div>
   );
 };
 
-export default Grade_Section;
+export default NavigationBTN;

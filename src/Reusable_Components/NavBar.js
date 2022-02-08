@@ -12,10 +12,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItem from "@mui/material/ListItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -78,9 +76,7 @@ export default function PersistentDrawerRight() {
 
   return (
     <>
-      <Box
-      //   sx={{ display: "flex" }}
-      >
+      <Box sx={{ display: "flex" }}>
         <DrawerHeader />
 
         <AppBar position="fixed" open={open}>
@@ -126,26 +122,18 @@ export default function PersistentDrawerRight() {
           </DrawerHeader>
           <Divider />
           <List>
-            {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
+            <Link to="/" className="link">
+              <ListItem button key="12 ls report calculator">
+                <ListItemText primary="12 ls report calculator" />
               </ListItem>
-            ))}
+            </Link>
+            <Link to="/classes" className="link">
+              <ListItem button key="classes">
+                <ListItemText primary="classes" />
+              </ListItem>
+            </Link>
           </List>
           <Divider />
-          <List>
-            {["All mail", "Trash", "Spam"].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List>
         </Drawer>
       </Box>
     </>
