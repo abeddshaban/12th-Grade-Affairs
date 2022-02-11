@@ -1,0 +1,26 @@
+.link_a {
+  text-decoration: none;
+  color: #000000;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.test_div {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border: 1px solid #000000;
+  border-radius: 9px;
+  padding: 18px;
+  margin: 8px;
+  transition-duration: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.test_div:hover {
+  cursor: pointer;
+  padding: 20px;
+  background-color: rgba(88, 88, 88, 0.212);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

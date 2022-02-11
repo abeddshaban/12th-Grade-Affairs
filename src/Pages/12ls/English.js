@@ -1,23 +1,32 @@
 import React from "react";
 import Navbar from "../../Navbar";
+import JsonData from "./12LsMaterial.json";
+import TestBTN from "../../Reusable_Components/TestBTN.js";
+import pdf from "../../Official_exams/12/LS/English/2004-1-english-ls.pdf";
 
-const English = () => {
+function English() {
+  const data = JsonData[0].English_tests;
+
   return (
     <>
       <div className="background_classes">
-        <Navbar title="Material" />
+        <Navbar title="English Tests" />
       </div>
+      <br />
       <div className="classes_page">
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://drive.google.com/file/d/1EdrYcvXNWodVlh03kIgB8PGsAvz3_qB3/view?usp=sharing"
-        >
-          <h3>test</h3>
-        </a>
+        {data.map((test) => {
+          return (
+            <TestBTN
+              path={test.path}
+              year={test.year}
+              courseNb={test.courseNb}
+            />
+          );
+        })}
+        <TestBTN path={pdf} year="x" courseNb="y" />
       </div>
     </>
   );
-};
+}
 
 export default English;
