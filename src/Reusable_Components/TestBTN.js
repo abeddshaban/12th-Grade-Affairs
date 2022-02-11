@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Styles/TestBTN.css";
 
 const TestBTN = ({ path, year, courseNb }) => {

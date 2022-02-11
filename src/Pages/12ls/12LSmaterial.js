@@ -6,12 +6,12 @@ const TwelveLS = () => {
   return (
     <>
       <div className="background_classes">
-        <Navbar title="Check your Class" />
+        <Navbar title="Check your Subject" />
       </div>
 
       <div className="classes_page">
         <NavigationBTN path="/12-ls/English" text="English" />
-        <NavigationBTN path="/" text="Arabic" />
+        {/* <NavigationBTN path="/" text="Arabic" />
         <NavigationBTN path="/" text="Math" />
         <NavigationBTN path="/" text="Chemistry" />
         <NavigationBTN path="/" text="Physics" />
@@ -19,7 +19,7 @@ const TwelveLS = () => {
         <NavigationBTN path="/" text="Civics" />
         <NavigationBTN path="/" text="Geography" />
         <NavigationBTN path="/" text="Philosofy" />
-        <NavigationBTN path="/" text="History" />
+        <NavigationBTN path="/" text="History" /> */}
       </div>
     </>
   );
