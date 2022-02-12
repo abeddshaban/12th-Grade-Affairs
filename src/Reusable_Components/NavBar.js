@@ -103,12 +103,13 @@ export default function PersistentDrawerRight() {
           </DrawerHeader>
           <Divider />
           <List>
-            <Link to="/" className="link">
+            <Link to="/" className="link" onClick={handleDrawerClose}>
               <ListItem button key="12 ls report calculator">
                 <ListItemText primary="12 ls report calculator" />
               </ListItem>
             </Link>
-            <Link to="/classes" className="link">
+
+            <Link to="/classes" className="link" onClick={handleDrawerClose}>
               <ListItem button key="classes">
                 <ListItemText primary="classes" />
               </ListItem>

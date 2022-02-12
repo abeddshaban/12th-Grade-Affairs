@@ -30,7 +30,7 @@ const LS = () => {
         History * 1.5 +
         Geography * 1.5 +
         Philosophy * 2) /
-        5.5
+        5.6
     );
   }, [
     English,
@@ -90,10 +90,7 @@ const LS = () => {
             <input
               className="input_grade"
               type="number"
-              min="0"
-              max="20"
-              placeholder="grade"
-              maxLength={2}
+              placeholder="English"
               value={English}
               onChange={(e) => setEnglish(e.target.value)}
             />
@@ -103,10 +100,7 @@ const LS = () => {
             <input
               className="input_grade"
               type="number"
-              min="0"
-              max="20"
-              placeholder="grade"
-              maxLength={2}
+              placeholder="Arabic"
               value={Arabic}
               onChange={(e) => setArabic(e.target.value)}
             />
@@ -116,10 +110,7 @@ const LS = () => {
             <input
               className="input_grade"
               type="number"
-              min="0"
-              max="20"
-              placeholder="grade"
-              maxLength={2}
+              placeholder="Math"
               value={Math}
               onChange={(e) => setMath(e.target.value)}
             />
@@ -129,10 +120,7 @@ const LS = () => {
             <input
               className="input_grade"
               type="number"
-              min="0"
-              max="20"
-              placeholder="grade"
-              maxLength={2}
+              placeholder="Physics"
               value={Physics}
               onChange={(e) => setPhysics(e.target.value)}
             />
@@ -142,10 +130,7 @@ const LS = () => {
             <input
               className="input_grade"
               type="number"
-              min="0"
-              max="20"
-              placeholder="grade"
-              maxLength={2}
+              placeholder="Chemistry"
               value={Chemistry}
               onChange={(e) => setChemistry(e.target.value)}
             />
@@ -155,10 +140,7 @@ const LS = () => {
             <input
               className="input_grade"
               type="number"
-              min="0"
-              max="20"
-              placeholder="grade"
-              maxLength={2}
+              placeholder="Biology"
               value={Biology}
               onChange={(e) => setBiology(e.target.value)}
             />
@@ -168,10 +150,7 @@ const LS = () => {
             <input
               className="input_grade"
               type="number"
-              min="0"
-              max="20"
-              placeholder="grade"
-              maxLength={2}
+              placeholder="Civics"
               value={Civics}
               onChange={(e) => setCivics(e.target.value)}
             />
@@ -181,10 +160,7 @@ const LS = () => {
             <input
               className="input_grade"
               type="number"
-              min="0"
-              max="20"
-              placeholder="grade"
-              maxLength={2}
+              placeholder="History"
               value={History}
               onChange={(e) => setHistory(e.target.value)}
             />
@@ -194,10 +170,7 @@ const LS = () => {
             <input
               className="input_grade"
               type="number"
-              min="0"
-              max="20"
-              placeholder="grade"
-              maxLength={2}
+              placeholder="Geography"
               value={Geography}
               onChange={(e) => setGeography(e.target.value)}
             />
@@ -207,10 +180,7 @@ const LS = () => {
             <input
               className="input_grade"
               type="number"
-              min="0"
-              max="20"
-              placeholder="grade"
-              maxLength={2}
+              placeholder="Philosophy"
               value={Philosophy}
               onChange={(e) => setPhilosophy(e.target.value)}
             />

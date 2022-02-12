@@ -4,8 +4,7 @@ import JsonData from "./12LsMaterial.json";
 import TestBTN from "../../Reusable_Components/TestBTN.js";
 
 const English = () => {
-  const data = JsonData[0].English_tests;
-
+  const data = JsonData[0].twelve[0].ls[0].English_tests;
   return (
     <>
       <div className="background_classes_english">

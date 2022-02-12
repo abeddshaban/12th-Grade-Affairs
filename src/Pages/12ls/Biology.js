@@ -3,13 +3,12 @@ import Navbar from "../../Navbar";
 import JsonData from "./12LsMaterial.json";
 import TestBTN from "../../Reusable_Components/TestBTN.js";
 
-const Geography = () => {
-  const data = JsonData[0].twelve[0].ls[1].Geography_tests;
-
+const Biology = () => {
+  const data = JsonData[0].twelve[0].ls[3].Biology_tests;
   return (
     <>
-      <div className="background_classes_geography">
-        <Navbar title="Geography Official Exams" />
+      <div className="background_classes_biology">
+        <Navbar title="Biology Official Exams" />
       </div>
       <br />
       <div className="classes_page">
@@ -28,4 +27,4 @@ const Geography = () => {
   );
 };
 
-export default Geography;
+export default Biology;
