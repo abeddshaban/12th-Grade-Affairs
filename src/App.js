@@ -8,6 +8,7 @@ import Grade12 from "./Pages/Grade_12";
 import TwelveLs from "./Pages/12ls/12LSmaterial";
 import TwelveLsEnglish from "./Pages/12ls/English";
 import TwelveLsGeography from "./Pages/12ls/Geography";
+import TwelveLsChemistry from "./Pages/12ls/Chemistry";
 
 function App() {
   return (
@@ -40,6 +41,13 @@ function App() {
             exact
             path="/12-ls/Geography"
             element={<TwelveLsGeography />}
+          />
+        </Routes>
+        <Routes>
+          <Route
+            exact
+            path="/12-ls/Chemistry"
+            element={<TwelveLsChemistry />}
           />
         </Routes>
       </BrowserRouter>

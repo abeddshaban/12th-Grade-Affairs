@@ -9,3 +9,29 @@
   background-color: #ffa600;
   font-size: 50px;
 }
+
+.background_classes_chemisty {
+  font-size: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: linear-gradient(
+    to left,
+    #c7e2ff,
+    #59f89c,
+    #98f859,
+    #7458f8,
+    #670099
+  );
+}
+.background_classes_english {
+  font-size: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #f51df2;
+}
+.background_classes_geography {
+  font-size: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #75f332;
+}

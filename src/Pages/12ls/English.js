@@ -8,7 +8,7 @@ const English = () => {
 
   return (
     <>
-      <div className="background_classes">
+      <div className="background_classes_english">
         <Navbar title="English Official Exams" />
       </div>
       <br />

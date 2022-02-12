@@ -12,9 +12,9 @@ const TwelveLS = () => {
       <div className="classes_page">
         <NavigationBTN path="/12-ls/English" text="English" />
         <NavigationBTN path="/12-ls/Geography" text="Geography" />
+        <NavigationBTN path="/12-ls/Chemistry" text="Chemistry" />
         {/* <NavigationBTN path="/" text="Arabic" />
         <NavigationBTN path="/" text="Math" />
-        <NavigationBTN path="/" text="Chemistry" />
         <NavigationBTN path="/" text="Physics" />
         <NavigationBTN path="/" text="Biology" />
         <NavigationBTN path="/" text="Civics" />
