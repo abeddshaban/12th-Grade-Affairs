@@ -13,9 +13,10 @@ const TwelveLS = () => {
         <NavigationBTN path="/12-ls/English" text="English" />
         <NavigationBTN path="/12-ls/Chemistry" text="Chemistry" />
         <NavigationBTN path="/12-ls/Biology" text="Biology" />
+        <NavigationBTN path="/12-ls/Arabic" text="Arabic" />
         <NavigationBTN path="/12-ls/Geography" text="Geography" />
         <NavigationBTN path="/12-ls/Civics" text="Civics" />
-        {/* <NavigationBTN path="/" text="Arabic" />
+        {/* 
         <NavigationBTN path="/" text="Math" />
         <NavigationBTN path="/" text="Physics" />
         <NavigationBTN path="/" text="Philosofy" />
