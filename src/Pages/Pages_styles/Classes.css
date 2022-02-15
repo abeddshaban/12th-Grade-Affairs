@@ -35,24 +35,27 @@
   padding-bottom: 5px;
   background-color: #75f332;
 }
-
 .background_classes_biology {
   font-size: 50px;
   padding-top: 5px;
   padding-bottom: 5px;
   background: #76ff40;
 }
-
 .background_classes_civics {
   font-size: 50px;
   padding-top: 5px;
   padding-bottom: 5px;
   background: #405dff;
 }
-
 .background_classes_math {
   font-size: 50px;
   padding-top: 5px;
   padding-bottom: 5px;
   background: #2affff;
+}
+.background_classes_physics {
+  font-size: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #2a3fff;
 }

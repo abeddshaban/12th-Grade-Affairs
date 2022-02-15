@@ -13,6 +13,7 @@ import TwelveLsBiology from "./Pages/12ls/Biology";
 import TwelveLsCivics from "./Pages/12ls/Civics";
 import TwelveLsArabic from "./Pages/12ls/Arabic";
 import TwelveLsMath from "./Pages/12ls/Math";
+import TwelveLsPhysics from "./Pages/12ls/Physics";
 //
 import ToggleButton from "@mui/material/ToggleButton";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
@@ -63,6 +64,9 @@ function App() {
       </Routes>
       <Routes>
         <Route exact path="/12-ls/Math" element={<TwelveLsMath />} />
+      </Routes>
+      <Routes>
+        <Route exact path="/12-ls/Physics" element={<TwelveLsPhysics />} />
       </Routes>
 
       <ToggleButton
