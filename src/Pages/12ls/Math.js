@@ -3,7 +3,7 @@ import Navbar from "../../Navbar";
 import JsonData from "./12LsMaterial.json";
 import TestBTN from "../../Reusable_Components/TestBTN.js";
 
-const Civics = () => {
+const Math = () => {
   const data = JsonData[0].twelve[0].EN[0].ls[6].Math;
   return (
     <>
@@ -27,4 +27,4 @@ const Civics = () => {
   );
 };
 
-export default Civics;
+export default Math;
