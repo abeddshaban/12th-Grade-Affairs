@@ -10,16 +10,16 @@ const TwelveLS = () => {
       </div>
 
       <div className="classes_page">
-        <NavigationBTN path="/12-ls/English" text="English" />
-        <NavigationBTN path="/12-ls/Chemistry" text="Chemistry" />
-        <NavigationBTN path="/12-ls/Biology" text="Biology" />
-        <NavigationBTN path="/12-ls/Arabic" text="Arabic" />
-        <NavigationBTN path="/12-ls/Geography" text="Geography" />
-        <NavigationBTN path="/12-ls/Civics" text="Civics" />
         <NavigationBTN path="/12-ls/Math" text="Math" />
+        <NavigationBTN path="/12-ls/Chemistry" text="Chemistry" />
         <NavigationBTN path="/12-ls/Physics" text="Physics" />
-        <NavigationBTN path="/12-ls/Philosophy" text="Philosophy" />
+        <NavigationBTN path="/12-ls/Biology" text="Biology" />
+        <NavigationBTN path="/12-ls/English" text="English" />
+        <NavigationBTN path="/12-ls/Arabic" text="Arabic" />
+        <NavigationBTN path="/12-ls/Civics" text="Civics" />
         <NavigationBTN path="/12-ls/History" text="History" />
+        <NavigationBTN path="/12-ls/Geography" text="Geography" />
+        <NavigationBTN path="/12-ls/Philosophy" text="Philosophy" />
       </div>
     </>
   );
