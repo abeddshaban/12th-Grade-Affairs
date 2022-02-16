@@ -2,6 +2,8 @@ import React from "react";
 import "./App.css";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import NavBar from "./Reusable_Components/NavBar";
+import Footer from "./Reusable_Components/Footer";
+
 import LS from "./Calculator/LS";
 import Classes from "./Pages/Classes";
 import Grade12 from "./Pages/Grade_12";
@@ -70,6 +72,8 @@ function App() {
       >
         <ArrowBackIcon />
       </ToggleButton>
+
+      <Footer />
     </>
   );
 }
