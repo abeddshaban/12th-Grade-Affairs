@@ -11,7 +11,7 @@ const Grade_12 = () => {
       </div>
       <div className="classes_page">
         {/* <Grade_Section path="" section="GS" /> */}
-        <NavigationBTN path="/12-ls/subjects" text="LS" />
+        <NavigationBTN path="/12-ls" text="LS" />
         {/* <Grade_Section path="" section="SE" /> */}
       </div>
     </>
