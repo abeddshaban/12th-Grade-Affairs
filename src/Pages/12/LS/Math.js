@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../../../Reusable_Components/Title";
-import JsonData from "./12LsMaterial.json";
+import JsonData from "../../../12LsMaterial.json";
 import TestBTN from "../../../Reusable_Components/TestBTN.js";
 
 const Math = () => {
