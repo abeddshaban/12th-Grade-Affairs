@@ -10,9 +10,9 @@ const Grade_12 = () => {
         <Title title="Check your Class" />
       </div>
       <div className="classes_page">
-        {/* <Grade_Section path="" section="GS" /> */}
+        <NavigationBTN path="12-gs" text="GS" />
         <NavigationBTN path="/12-ls" text="LS" />
-        {/* <Grade_Section path="" section="SE" /> */}
+        <NavigationBTN path="12-se" text="SE" />
       </div>
     </>
   );
