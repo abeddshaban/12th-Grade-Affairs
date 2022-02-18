@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from "../../Navbar";
+import Title from "../../../Reusable_Components/Title";
 import JsonData from "./12LsMaterial.json";
-import TestBTN from "../../Reusable_Components/TestBTN.js";
+import TestBTN from "../../../Reusable_Components/TestBTN.js";
 
-const Arabic = () => {
-  const data = JsonData[0].twelve[0].EN[0].ls[5].Arabic;
+const English = () => {
+  const data = JsonData[0].twelve[0].EN[0].ls[0].English;
   return (
     <>
-      <div className="background_classes_civics">
-        <Navbar title="Arabic Official Exams" />
+      <div className="background_classes_english">
+        <Title title="English Official Exams" />
       </div>
       <br />
       <div className="classes_page">
@@ -27,4 +27,4 @@ const Arabic = () => {
   );
 };
 
-export default Arabic;
+export default English;

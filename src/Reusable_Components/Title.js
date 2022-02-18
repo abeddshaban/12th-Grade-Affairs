@@ -1,5 +1,5 @@
 import React from "react";
-import "./NavBar.css";
+import "./Styles/Title.css";
 
 const Navbar = ({ title }) => {
   return <div className="navbar_div">{title}</div>;

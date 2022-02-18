@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from "../../Navbar";
+import Title from "../../../Reusable_Components/Title";
 import JsonData from "./12LsMaterial.json";
-import TestBTN from "../../Reusable_Components/TestBTN.js";
+import TestBTN from "../../../Reusable_Components/TestBTN.js";
 
-const Civics = () => {
-  const data = JsonData[0].twelve[0].EN[0].ls[4].Civics;
+const Arabic = () => {
+  const data = JsonData[0].twelve[0].EN[0].ls[5].Arabic;
   return (
     <>
       <div className="background_classes_civics">
-        <Navbar title="Civics Official Exams" />
+        <Title title="Arabic Official Exams" />
       </div>
       <br />
       <div className="classes_page">
@@ -27,4 +27,4 @@ const Civics = () => {
   );
 };
 
-export default Civics;
+export default Arabic;

@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from "../../Navbar";
+import Title from "../../../Reusable_Components/Title";
 import JsonData from "./12LsMaterial.json";
-import TestBTN from "../../Reusable_Components/TestBTN.js";
+import TestBTN from "../../../Reusable_Components/TestBTN.js";
 
-const Chemistry = () => {
-  const data = JsonData[0].twelve[0].EN[0].ls[2].Chemistry;
+const Math = () => {
+  const data = JsonData[0].twelve[0].EN[0].ls[6].Math;
   return (
     <>
-      <div className="background_classes_chemisty">
-        <Navbar title="Chemistry Official Exams" />
+      <div className="background_classes_math">
+        <Title title="Math Official Exams" />
       </div>
       <br />
       <div className="classes_page">
@@ -27,4 +27,4 @@ const Chemistry = () => {
   );
 };
 
-export default Chemistry;
+export default Math;

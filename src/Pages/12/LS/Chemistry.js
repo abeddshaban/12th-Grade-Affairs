@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from "../../Navbar";
+import Title from "../../../Reusable_Components/Title";
 import JsonData from "./12LsMaterial.json";
-import TestBTN from "../../Reusable_Components/TestBTN.js";
+import TestBTN from "../../../Reusable_Components/TestBTN.js";
 
-const Philosophy = () => {
-  const data = JsonData[0].twelve[0].EN[0].ls[8].Philosophy;
+const Chemistry = () => {
+  const data = JsonData[0].twelve[0].EN[0].ls[2].Chemistry;
   return (
     <>
-      <div className="background_classes_philosophy">
-        <Navbar title="Philosophy Official Exams" />
+      <div className="background_classes_chemisty">
+        <Title title="Chemistry Official Exams" />
       </div>
       <br />
       <div className="classes_page">
@@ -27,4 +27,4 @@ const Philosophy = () => {
   );
 };
 
-export default Philosophy;
+export default Chemistry;

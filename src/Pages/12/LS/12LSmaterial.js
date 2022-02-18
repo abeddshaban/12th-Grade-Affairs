@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../../Navbar";
-import NavigationBTN from "../../Reusable_Components/NavigationBTN";
+import Navbar from "../../../Reusable_Components/NavBar";
+import NavigationBTN from "../../../Reusable_Components/NavigationBTN";
 
 const TwelveLS = () => {
   return (

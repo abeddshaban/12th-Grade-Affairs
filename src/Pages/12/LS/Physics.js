@@ -1,15 +1,14 @@
 import React from "react";
-import Navbar from "../../Navbar";
+import Title from "../../../Reusable_Components/Title";
 import JsonData from "./12LsMaterial.json";
-import TestBTN from "../../Reusable_Components/TestBTN.js";
+import TestBTN from "../../../Reusable_Components/TestBTN.js";
 
-const Geography = () => {
-  const data = JsonData[0].twelve[0].EN[0].ls[1].Geography;
-
+const Physics = () => {
+  const data = JsonData[0].twelve[0].EN[0].ls[7].Physics;
   return (
     <>
-      <div className="background_classes_geography">
-        <Navbar title="Geography Official Exams" />
+      <div className="background_classes_physics">
+        <Title title="Physics Official Exams" />
       </div>
       <br />
       <div className="classes_page">
@@ -28,4 +27,4 @@ const Geography = () => {
   );
 };
 
-export default Geography;
+export default Physics;

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../Navbar";
-
+import Title from "../Reusable_Components/Title";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import WarningAmberIcon from "@mui/icons-material/WarningAmber";
 import Button from "@mui/material/Button";
@@ -63,7 +62,7 @@ const LS = () => {
   return (
     <>
       <div className="background_LS">
-        <Navbar title="LS" />
+        <Title title="LS" />
       </div>
       <br />
       <h2 className="center">
