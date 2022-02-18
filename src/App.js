@@ -42,7 +42,9 @@ function App() {
 
         <Route exact path="/" element={<LS />} />
         <Route exact path="/classes" element={<Classes />} />
+
         <Route exact path="/12" element={<Grade12 />} />
+
         <Route exact path="/12-ls" element={<TwelveLs />} />
 
         <Route exact path="/12-ls/English" element={<TwelveLsEnglish />} />
