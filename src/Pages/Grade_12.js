@@ -14,6 +14,20 @@ const Grade_12 = () => {
         <NavigationBTN path="/12-ls" text="LS" />
         <NavigationBTN path="12-se" text="SE" />
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 };

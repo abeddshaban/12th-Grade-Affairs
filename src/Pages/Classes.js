@@ -12,6 +12,20 @@ const Classes = () => {
       <div className="classes_page">
         <NavigationBTN path="/12" text="Grade 12" />
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 };

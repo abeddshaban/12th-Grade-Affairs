@@ -21,6 +21,20 @@ const TwelveLS = () => {
         <NavigationBTN path="/12-ls/Geography" text="Geography" />
         <NavigationBTN path="/12-ls/Philosophy" text="Philosophy" />
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 };
