@@ -23,6 +23,7 @@ import TwelveLsHistory from "./Pages/12/LS/History";
 import ToggleButton from "@mui/material/ToggleButton";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import PageNotFound from "./Reusable_Components/PageNotFound";
+import Terms from "./Pages/Terms";
 
 function App() {
   const [selected, setSelected] = React.useState(false);
@@ -51,6 +52,9 @@ function App() {
             </>
           }
         />
+
+        <Route exact path="/terms" element={<Terms />} />
+
         <Route exact path="/classes" element={<Classes />} />
 
         <Route exact path="/12" element={<Grade12 />} />
