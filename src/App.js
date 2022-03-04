@@ -4,7 +4,8 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import NavBar from "./Reusable_Components/NavBar";
 import Footer from "./Reusable_Components/Footer";
 
-import LS from "./Calculator/LS";
+import LSCalc from "./Calculator/LS";
+import GSCalc from "./Calculator/GS";
 import Classes from "./Pages/Classes";
 import Grade12 from "./Pages/Grade_12";
 import TwelveLs from "./Pages/12/LS/12LSmaterial";
@@ -40,7 +41,16 @@ function App() {
       <Routes>
         <Route path="*" element={<PageNotFound />} />
 
-        <Route exact path="/" element={<LS />} />
+        <Route
+          exact
+          path="/"
+          element={
+            <>
+              <LSCalc />
+              <GSCalc />
+            </>
+          }
+        />
         <Route exact path="/classes" element={<Classes />} />
 
         <Route exact path="/12" element={<Grade12 />} />

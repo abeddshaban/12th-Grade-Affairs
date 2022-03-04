@@ -104,8 +104,8 @@ export default function PersistentDrawerRight() {
           <Divider />
           <List>
             <Link to="/" className="link" onClick={handleDrawerClose}>
-              <ListItem button key="12 ls grade calculator">
-                <ListItemText primary="12 ls grade calculator" />
+              <ListItem button key="12 grade calculator">
+                <ListItemText primary="12 grade calculator" />
               </ListItem>
             </Link>
 
