@@ -1,11 +1,11 @@
-import React from "react";
 import "./App.css";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import NavBar from "./Reusable_Components/NavBar";
 import Footer from "./Reusable_Components/Footer";
-
+// calculators
 import LSCalc from "./Calculator/LS";
 import GSCalc from "./Calculator/GS";
+//
 import Classes from "./Pages/Classes";
 import Grade12 from "./Pages/Grade_12";
 import TwelveLs from "./Pages/12/LS/12LSmaterial";
@@ -25,9 +25,10 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import PageNotFound from "./Reusable_Components/PageNotFound";
 import Terms from "./Pages/Terms";
 import Contact from "./Pages/Contact";
+import { useState } from "react";
 
 function App() {
-  const [selected, setSelected] = React.useState(false);
+  const [selected, setSelected] = useState(false);
   const navigate = useNavigate();
 
   return (

@@ -2,18 +2,19 @@ import React, { useEffect, useState } from "react";
 import Title from "../Reusable_Components/Title";
 import Button from "@mui/material/Button";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import "./Styles/Calc.css";
 
 const GS = () => {
-  const [ArabicGS, setArabicGS] = useState(0);
-  const [EnglishGS, setEnglishGS] = useState(0);
-  const [MathGS, setMathGS] = useState(0);
-  const [PhysicsGS, setPhysicsGS] = useState(0);
-  const [ChemistryGS, setChemistryGS] = useState(0);
-  const [HistoryGS, setHistoryGS] = useState(0);
-  const [GeographyGS, setGeographyGS] = useState(0);
-  const [CivicsGS, setCivicsGS] = useState(0);
-  const [PhilosophyGS, setPhilosophyGS] = useState(0);
-  const [GStotal, setGStotal] = useState(0);
+  const [ArabicGS, setArabicGS] = useState();
+  const [EnglishGS, setEnglishGS] = useState();
+  const [MathGS, setMathGS] = useState();
+  const [PhysicsGS, setPhysicsGS] = useState();
+  const [ChemistryGS, setChemistryGS] = useState();
+  const [HistoryGS, setHistoryGS] = useState();
+  const [GeographyGS, setGeographyGS] = useState();
+  const [CivicsGS, setCivicsGS] = useState();
+  const [PhilosophyGS, setPhilosophyGS] = useState();
+  const [GStotal, setGStotal] = useState();
 
   useEffect(() => {
     setGStotal(
@@ -85,7 +86,8 @@ const GS = () => {
               value={EnglishGS}
               onChange={(e) => setEnglishGS(e.target.value)}
             />
-            <span className="outOf"> /20</span>
+            <span> /20</span>
+            <span className="margleft  grey">({EnglishGS * 2} /40)</span>
           </div>
           <div className="subject_div">
             <input
@@ -95,7 +97,8 @@ const GS = () => {
               value={ArabicGS}
               onChange={(e) => setArabicGS(e.target.value)}
             />
-            <span className="outOf"> /20</span>
+            <span> /20</span>
+            <span className="margleft  grey">({ArabicGS * 2.5} /50)</span>
           </div>
           <div className="subject_div">
             <input
@@ -105,7 +108,8 @@ const GS = () => {
               value={MathGS}
               onChange={(e) => setMathGS(e.target.value)}
             />
-            <span className="outOf"> /20</span>
+            <span> /20</span>
+            <span className="margleft  grey">({MathGS * 8} /160)</span>
           </div>
           <div className="subject_div">
             <input
@@ -116,6 +120,7 @@ const GS = () => {
               onChange={(e) => setPhysicsGS(e.target.value)}
             />
             <span className="outOf"> /20</span>
+            <span className="margleft  grey">({PhysicsGS * 5.5} /110)</span>
           </div>
           <div className="subject_div">
             <input
@@ -126,6 +131,7 @@ const GS = () => {
               onChange={(e) => setChemistryGS(e.target.value)}
             />
             <span className="outOf"> /20</span>
+            <span className="margleft  grey">({ChemistryGS * 4} /80)</span>
           </div>
 
           <div className="subject_div">
@@ -137,6 +143,7 @@ const GS = () => {
               onChange={(e) => setCivicsGS(e.target.value)}
             />
             <span className="outOf"> /20</span>
+            <span className="margleft  grey">({CivicsGS * 1.5} /30)</span>
           </div>
           <div className="subject_div">
             <input
@@ -147,6 +154,7 @@ const GS = () => {
               onChange={(e) => setHistoryGS(e.target.value)}
             />
             <span className="outOf"> /20</span>
+            <span className="margleft  grey">({HistoryGS * 1.5} /30)</span>
           </div>
           <div className="subject_div">
             <input
@@ -157,6 +165,7 @@ const GS = () => {
               onChange={(e) => setGeographyGS(e.target.value)}
             />
             <span className="outOf"> /20</span>
+            <span className="margleft  grey">({GeographyGS * 1.5} /30)</span>
           </div>
           <div className="subject_div">
             <input
@@ -167,6 +176,7 @@ const GS = () => {
               onChange={(e) => setPhilosophyGS(e.target.value)}
             />
             <span className="outOf"> /20</span>
+            <span className="margleft  grey">({PhilosophyGS * 2} /40)</span>
           </div>
         </section>
       </div>
@@ -179,7 +189,8 @@ const GS = () => {
       </div>
       <div className="total_grade_div">
         <span className="total_value">
-          Your total grade is <strong>{GStotal.toFixed(2)}</strong>/100
+          Your total grade is
+          <strong>{GStotal > 0 ? GStotal.toFixed(2) : null}</strong>/100
         </span>
       </div>
       <br />
