@@ -190,7 +190,10 @@ const GS = () => {
       <div className="total_grade_div">
         <span className="total_value">
           Your total grade is
-          <strong>{GStotal > 0 ? GStotal.toFixed(2) : null}</strong>/100
+          <strong className="margleft">
+            {GStotal > 0 ? GStotal.toFixed(2) : 0}
+          </strong>
+          /100
         </span>
       </div>
       <br />

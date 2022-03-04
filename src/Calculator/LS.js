@@ -1,63 +1,64 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Title from "../Reusable_Components/Title";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import WarningAmberIcon from "@mui/icons-material/WarningAmber";
 import Button from "@mui/material/Button";
+import "./Styles/Calc.css";
 
 const LS = () => {
-  const [English, setEnglish] = useState(0);
-  const [Arabic, setArabic] = useState(0);
-  const [Math, setMath] = useState(0);
-  const [Physics, setPhysics] = useState(0);
-  const [Chemistry, setChemistry] = useState(0);
-  const [Biology, setBiology] = useState(0);
-  const [Civics, setCivics] = useState(0);
-  const [History, setHistory] = useState(0);
-  const [Geography, setGeography] = useState(0);
-  const [Philosophy, setPhilosophy] = useState(0);
-  const [Total, setTotal] = useState(0);
+  const [EnglishLS, setEnglishLS] = useState();
+  const [ArabicLS, setArabicLS] = useState();
+  const [MathLS, setMathLS] = useState();
+  const [PhysicsLS, setPhysicsLS] = useState();
+  const [ChemistryLS, setChemistryLS] = useState();
+  const [BiologyLS, setBiologyLS] = useState();
+  const [CivicsLS, setCivicsLS] = useState();
+  const [HistoryLS, setHistoryLS] = useState();
+  const [GeographyLS, setGeographyLS] = useState();
+  const [PhilosophyLS, setPhilosophyLS] = useState();
+  const [TotalLS, setTotalLS] = useState();
 
   useEffect(() => {
-    setTotal(
-      (English * 2 +
-        Arabic * 2.5 +
-        Math * 4 +
-        Physics * 4 +
-        Chemistry * 4 +
-        Biology * 5 +
-        Civics * 1.5 +
-        History * 1.5 +
-        Geography * 1.5 +
-        Philosophy * 2) /
+    setTotalLS(
+      (EnglishLS * 2 +
+        ArabicLS * 2.5 +
+        MathLS * 4 +
+        PhysicsLS * 4 +
+        ChemistryLS * 4 +
+        BiologyLS * 5 +
+        CivicsLS * 1.5 +
+        HistoryLS * 1.5 +
+        GeographyLS * 1.5 +
+        PhilosophyLS * 2) /
         5.6
     );
   }, [
-    English,
-    Arabic,
-    Math,
-    Physics,
-    Chemistry,
-    Biology,
-    Civics,
-    History,
-    Geography,
-    Philosophy,
+    EnglishLS,
+    ArabicLS,
+    MathLS,
+    PhysicsLS,
+    ChemistryLS,
+    BiologyLS,
+    CivicsLS,
+    HistoryLS,
+    GeographyLS,
+    PhilosophyLS,
   ]);
 
-  const ResetValues = (e) => {
+  const ResetLSValues = (e) => {
     e.preventDefault();
 
-    setEnglish(0);
-    setArabic(0);
-    setMath(0);
-    setPhysics(0);
-    setChemistry(0);
-    setBiology(0);
-    setCivics(0);
-    setHistory(0);
-    setGeography(0);
-    setPhilosophy(0);
-    console.log("reset grades done :)");
+    setEnglishLS(0);
+    setArabicLS(0);
+    setMathLS(0);
+    setPhysicsLS(0);
+    setChemistryLS(0);
+    setBiologyLS(0);
+    setCivicsLS(0);
+    setHistoryLS(0);
+    setGeographyLS(0);
+    setPhilosophyLS(0);
+    console.log("reset grades of LS done :)");
   };
   return (
     <>
@@ -90,126 +91,140 @@ const LS = () => {
               className="input_grade"
               type="number"
               placeholder="English"
-              value={English}
-              onChange={(e) => setEnglish(e.target.value)}
+              value={EnglishLS}
+              onChange={(e) => setEnglishLS(e.target.value)}
             />
-            <span className="outOf"> /20</span>
+            <span> /20</span>
+            <span className="margleft  grey">({EnglishLS * 2} /40)</span>
           </div>
           <div className="subject_div">
             <input
               className="input_grade"
               type="number"
               placeholder="Arabic"
-              value={Arabic}
-              onChange={(e) => setArabic(e.target.value)}
+              value={ArabicLS}
+              onChange={(e) => setArabicLS(e.target.value)}
             />
-            <span className="outOf"> /20</span>
+            <span> /20</span>
+            <span className="margleft  grey">({ArabicLS * 2.5} /50)</span>
           </div>
           <div className="subject_div">
             <input
               className="input_grade"
               type="number"
               placeholder="Math"
-              value={Math}
-              onChange={(e) => setMath(e.target.value)}
+              value={MathLS}
+              onChange={(e) => setMathLS(e.target.value)}
             />
-            <span className="outOf"> /20</span>
+            <span> /20</span>
+            <span className="margleft  grey">({MathLS * 4} /80)</span>
           </div>
           <div className="subject_div">
             <input
               className="input_grade"
               type="number"
               placeholder="Physics"
-              value={Physics}
-              onChange={(e) => setPhysics(e.target.value)}
+              value={PhysicsLS}
+              onChange={(e) => setPhysicsLS(e.target.value)}
             />
-            <span className="outOf"> /20</span>
+            <span> /20</span>
+            <span className="margleft  grey">({PhysicsLS * 4} /80)</span>
           </div>
           <div className="subject_div">
             <input
               className="input_grade"
               type="number"
               placeholder="Chemistry"
-              value={Chemistry}
-              onChange={(e) => setChemistry(e.target.value)}
+              value={ChemistryLS}
+              onChange={(e) => setChemistryLS(e.target.value)}
             />
-            <span className="outOf"> /20</span>
+            <span> /20</span>
+            <span className="margleft  grey">({ChemistryLS * 4} /80)</span>
           </div>
           <div className="subject_div">
             <input
               className="input_grade"
               type="number"
               placeholder="Biology"
-              value={Biology}
-              onChange={(e) => setBiology(e.target.value)}
+              value={BiologyLS}
+              onChange={(e) => setBiologyLS(e.target.value)}
             />
-            <span className="outOf"> /20</span>
+            <span> /20</span>
+            <span className="margleft  grey">({BiologyLS * 5} /100)</span>
           </div>
           <div className="subject_div">
             <input
               className="input_grade"
               type="number"
               placeholder="Civics"
-              value={Civics}
-              onChange={(e) => setCivics(e.target.value)}
+              value={CivicsLS}
+              onChange={(e) => setCivicsLS(e.target.value)}
             />
-            <span className="outOf"> /20</span>
+            <span> /20</span>
+            <span className="margleft  grey">({CivicsLS * 1.5} /30)</span>
           </div>
           <div className="subject_div">
             <input
               className="input_grade"
               type="number"
               placeholder="History"
-              value={History}
-              onChange={(e) => setHistory(e.target.value)}
+              value={HistoryLS}
+              onChange={(e) => setHistoryLS(e.target.value)}
             />
-            <span className="outOf"> /20</span>
+            <span> /20</span>
+            <span className="margleft  grey">({HistoryLS * 1.5} /30)</span>
           </div>
           <div className="subject_div">
             <input
               className="input_grade"
               type="number"
               placeholder="Geography"
-              value={Geography}
-              onChange={(e) => setGeography(e.target.value)}
+              value={GeographyLS}
+              onChange={(e) => setGeographyLS(e.target.value)}
             />
-            <span className="outOf"> /20</span>
+            <span> /20</span>
+            <span className="margleft  grey">({GeographyLS * 1.5} /30)</span>
           </div>
           <div className="subject_div">
             <input
               className="input_grade"
               type="number"
               placeholder="Philosophy"
-              value={Philosophy}
-              onChange={(e) => setPhilosophy(e.target.value)}
+              value={PhilosophyLS}
+              onChange={(e) => setPhilosophyLS(e.target.value)}
             />
-            <span className="outOf"> /20</span>
+            <span> /20</span>
+            <span className="margleft  grey">({PhilosophyLS * 2} /40)</span>
           </div>
         </section>
       </div>
       {/* output */}
       <br />
       <div className="reset_button">
-        <Button onClick={ResetValues} variant="outlined">
+        <Button onClick={ResetLSValues} variant="outlined">
           reset
         </Button>
       </div>
       <div className="total_grade_div">
         <span className="total_value">
-          Your total grade is <strong>{Total.toFixed(2)}</strong>/100
+          Your total grade is
+          <strong className="margleft">
+            {TotalLS > 0 ? TotalLS.toFixed(2) : 0}
+          </strong>
+          /100
         </span>
       </div>
       <br />
-      {(English > 0) &
-      (Arabic > 0) &
-      (Math > 0) &
-      (Physics > 0) &
-      (Chemistry > 0) &
-      (Biology > 0) &
-      (Civics > 0) &
-      (History > 0) &
-      (Geography > 0) &
-      (Philosophy > 0) ? (
+      {(EnglishLS > 0) &
+      (ArabicLS > 0) &
+      (MathLS > 0) &
+      (PhysicsLS > 0) &
+      (ChemistryLS > 0) &
+      (BiologyLS > 0) &
+      (CivicsLS > 0) &
+      (HistoryLS > 0) &
+      (GeographyLS > 0) &
+      (PhilosophyLS > 0) ? (
         <div className="share_div">
           <>
             <h3>share ur score with others on:</h3>
