@@ -70,7 +70,7 @@ const SE = () => {
   };
   return (
     <>
-      <div className="background_LS">
+      <div className="background_SE">
         <Title title="SE" />
       </div>
       <br />
