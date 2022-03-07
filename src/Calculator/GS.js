@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Title from "../Reusable_Components/Title";
 import Button from "@mui/material/Button";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import "./Styles/Calc.css";
 
 const GS = () => {
-  const [ArabicGS, setArabicGS] = useState();
-  const [EnglishGS, setEnglishGS] = useState();
-  const [MathGS, setMathGS] = useState();
-  const [PhysicsGS, setPhysicsGS] = useState();
-  const [ChemistryGS, setChemistryGS] = useState();
-  const [HistoryGS, setHistoryGS] = useState();
-  const [GeographyGS, setGeographyGS] = useState();
-  const [CivicsGS, setCivicsGS] = useState();
-  const [PhilosophyGS, setPhilosophyGS] = useState();
-  const [GStotal, setGStotal] = useState();
+  const [ArabicGS, setArabicGS] = useState("");
+  const [EnglishGS, setEnglishGS] = useState("");
+  const [MathGS, setMathGS] = useState("");
+  const [PhysicsGS, setPhysicsGS] = useState("");
+  const [ChemistryGS, setChemistryGS] = useState("");
+  const [HistoryGS, setHistoryGS] = useState("");
+  const [GeographyGS, setGeographyGS] = useState("");
+  const [CivicsGS, setCivicsGS] = useState("");
+  const [PhilosophyGS, setPhilosophyGS] = useState("");
+  const [GStotal, setGStotal] = useState("");
 
   useEffect(() => {
     setGStotal(
@@ -44,15 +44,15 @@ const GS = () => {
   const ResetGSValues = (e) => {
     e.preventDefault();
 
-    setArabicGS(0);
-    setEnglishGS(0);
-    setMathGS(0);
-    setPhysicsGS(0);
-    setChemistryGS(0);
-    setHistoryGS(0);
-    setGeographyGS(0);
-    setCivicsGS(0);
-    setPhilosophyGS(0);
+    setArabicGS("");
+    setEnglishGS("");
+    setMathGS("");
+    setPhysicsGS("");
+    setChemistryGS("");
+    setHistoryGS("");
+    setGeographyGS("");
+    setCivicsGS("");
+    setPhilosophyGS("");
 
     console.log("reset GS grades done :)");
   };

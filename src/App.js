@@ -5,6 +5,8 @@ import Footer from "./Reusable_Components/Footer";
 // calculators
 import LSCalc from "./Calculator/LS";
 import GSCalc from "./Calculator/GS";
+import SECalc from "./Calculator/SE";
+
 //
 import Classes from "./Pages/Classes";
 import Grade12 from "./Pages/Grade_12";
@@ -49,6 +51,7 @@ function App() {
           path="/"
           element={
             <>
+              <SECalc />
               <LSCalc />
               <GSCalc />
             </>

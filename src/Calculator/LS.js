@@ -1,22 +1,22 @@
 import { useEffect, useState } from "react";
 import Title from "../Reusable_Components/Title";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import WarningAmberIcon from "@mui/icons-material/WarningAmber";
+// import WarningAmberIcon from "@mui/icons-material/WarningAmber";
 import Button from "@mui/material/Button";
 import "./Styles/Calc.css";
 
 const LS = () => {
-  const [EnglishLS, setEnglishLS] = useState();
-  const [ArabicLS, setArabicLS] = useState();
-  const [MathLS, setMathLS] = useState();
-  const [PhysicsLS, setPhysicsLS] = useState();
-  const [ChemistryLS, setChemistryLS] = useState();
-  const [BiologyLS, setBiologyLS] = useState();
-  const [CivicsLS, setCivicsLS] = useState();
-  const [HistoryLS, setHistoryLS] = useState();
-  const [GeographyLS, setGeographyLS] = useState();
-  const [PhilosophyLS, setPhilosophyLS] = useState();
-  const [TotalLS, setTotalLS] = useState();
+  const [EnglishLS, setEnglishLS] = useState("");
+  const [ArabicLS, setArabicLS] = useState("");
+  const [MathLS, setMathLS] = useState("");
+  const [PhysicsLS, setPhysicsLS] = useState("");
+  const [ChemistryLS, setChemistryLS] = useState("");
+  const [BiologyLS, setBiologyLS] = useState("");
+  const [CivicsLS, setCivicsLS] = useState("");
+  const [HistoryLS, setHistoryLS] = useState("");
+  const [GeographyLS, setGeographyLS] = useState("");
+  const [PhilosophyLS, setPhilosophyLS] = useState("");
+  const [TotalLS, setTotalLS] = useState("");
 
   useEffect(() => {
     setTotalLS(
@@ -48,16 +48,17 @@ const LS = () => {
   const ResetLSValues = (e) => {
     e.preventDefault();
 
-    setEnglishLS(0);
-    setArabicLS(0);
-    setMathLS(0);
-    setPhysicsLS(0);
-    setChemistryLS(0);
-    setBiologyLS(0);
-    setCivicsLS(0);
-    setHistoryLS(0);
-    setGeographyLS(0);
-    setPhilosophyLS(0);
+    setEnglishLS("");
+    setArabicLS("");
+    setMathLS("");
+    setPhysicsLS("");
+    setChemistryLS("");
+    setBiologyLS("");
+    setCivicsLS("");
+    setHistoryLS("");
+    setGeographyLS("");
+    setPhilosophyLS("");
+
     console.log("reset grades of LS done :)");
   };
   return (
@@ -66,11 +67,11 @@ const LS = () => {
         <Title title="LS" />
       </div>
       <br />
-      <h2 className="center">
+      {/* <h2 className="center">
         <WarningAmberIcon />
         other sections and grades coming soon
         <WarningAmberIcon />
-      </h2>
+      </h2> */}
       <div className="App">
         <section className="subjects_section">
           <span>English:</span>
